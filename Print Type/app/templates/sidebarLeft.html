@@ -1,0 +1,19 @@
+<div id="sidebar-left">
+	<span class="instructions">
+		<p>1. Select Paragraph  
+			<span class="instruction-tag" ng-class="(vm.RTService.getSelectedElemId() === null) ? 'instructions_color_2' : 'instructions_color_1'"></span>
+		</p>
+		<p>2. Modify Style
+			<span class="instruction-tag" ng-class="(vm.RTService.getSelectedElemStyleChange() === true) ? 'instructions_color_1' : 'instructions_color_2'"></span>
+		</p>
+	</span>
+		<li ng-repeat="style in vm.LAYER_STYLES track by $index" class="layer-style" ng-click="vm.changeStyle($index)"> 
+			<span 
+				
+				ng-style="{'font-size': 20 + 'px',
+									 'line-height': 50 + 'px',
+									 'font-family': vm.LAYER_STYLES[$index].font_family,
+									 'color': vm.LAYER_STYLES[$index].color,
+									 'background-color': vm.LAYER_STYLES[$index].bg_color }">{{vm.LAYER_STYLES[$index].text}}</span>
+		</li>
+</div>

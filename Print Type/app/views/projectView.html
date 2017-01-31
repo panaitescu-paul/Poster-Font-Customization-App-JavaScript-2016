@@ -1,0 +1,35 @@
+
+<div class="container project-view">
+
+	<div class="path">
+		<a ui-sref="overview"><span class="path-elem">Projects</span></a>
+		<span class="path-elem">/</span>
+		<span class="path-elem">{{currentProject.title}}</span>
+		<button class="png-btn" ng-click="screenshoot()"> PNG </button>
+	</div>
+	
+	<div ng-if="loadingState" style="margin-top: 60px;">
+		<h3>Loading ...</h3>
+	</div>
+
+	<sidebar-left
+		project-id="currentProject.$id"
+		data="currentProject.elements"
+		selectedElemId="selectedElemId"
+		class="sidebar-left"
+	>a</sidebar-left>
+
+	<input-list 
+		project-id="currentProject.$id"
+		data="currentProject.elements"
+		selectedElemId="selectedElemId"
+		></input-list>
+
+	<sidebar-right
+		project-id="currentProject.$id"
+		data="currentProject.elements"
+		selectedElemId="selectedElemId"
+		class="sidebar-right"
+	>b</sidebar-right>
+
+</div>

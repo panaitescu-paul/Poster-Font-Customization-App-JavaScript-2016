@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reengineer Type</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+  <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Cinzel|Cormorant+Garamond|Cormorant+Infant|Cormorant+SC|Gravitas+One|Josefin+Slab|Poiret+One|Reem+Kufi|Quicksand:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script type="text/javascript" src="../assets/js/html2canvas.js"></script>
+  
+
+</head>
+<body ng-app="Application">
+
+  <div class="container">
+    <div ui-view="overviewView"></div>                     
+    <div ui-view="projectView"></div>                     
+  </div>    
+
+  <script type="text/javascript" src="../assets/js/app.js"></script>
+  <script type="text/javascript" src="app/controllers/overviewController.js"></script>
+  <script type="text/javascript" src="app/controllers/projectController.js"></script>
+  <script type="text/javascript" src="app/directives/inputList.js"></script>
+  <script type="text/javascript" src="app/directives/sidebarLeft.js"></script>
+  <script type="text/javascript" src="app/directives/sidebarRight.js"></script>
+
+</body>
+</html>

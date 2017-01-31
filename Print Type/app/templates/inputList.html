@@ -1,0 +1,26 @@
+<div class="container input-list">
+	
+	<div id="input-list-root">
+		<div ng-repeat="elem in vm._data track by $index" class="element">
+			<textarea 
+				ng-focus="vm.focusElem($index)"
+				ng-model="elem.content" 
+				id="elem-{{$index}}" 
+				ng-keyup="vm.keyup($event.keyCode, $index, elem.content.length, vm._data.length)" 
+				ng-keydown="vm.keydown($event.keyCode, $index, elem.content.length, vm._data.length)"
+				ng-change="vm.expandable($index)"
+				ng-style="{'font-size': vm.data[$index].style.text_size + 'px',
+									 'line-height': vm.data[$index].style.line_height + 'px',
+									 'margin-top': vm.data[$index].style.margin_top + 'px',
+									 'margin-bottom': vm.data[$index].style.margin_bottom + 'px',
+									 'font-family': vm.data[$index].style.font_family,
+									 'color': vm.data[$index].style.color,
+									 'background-color': vm.data[$index].style.bg_color }"
+				class="textarea" 
+				ng-class="vm.selectedElemId === $index ? 'selected-elem' : 'unselected-elem'"
+				></textarea> 
+
+		</div>
+	</div>
+
+</div>

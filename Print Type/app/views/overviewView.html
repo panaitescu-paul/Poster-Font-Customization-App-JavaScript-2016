@@ -1,0 +1,11 @@
+	<div class="form-project">
+		<input type="text" class="form-control custom-input" placeholder="Project Title" ng-model="project.title">
+		<button type="submit" class="custom-btn" ng-click="addProject()">+</button>
+	</div>
+	<br/>
+	<br/>
+<div class="overview-wrapper">
+	<div class="span project-title" ng-repeat="project in RTService.projects track by project.$id">
+	    <a ui-sref="project({projectId: project.$id})">{{$index}}. {{project.title}}</a>
+	</div>
+</div>

@@ -1,0 +1,70 @@
+<div id="sidebar-right">
+	<div class="panel-small font-size-panel">
+		<p class="panel-notes">Size</p>
+		<input id="textSizeInputId"
+			min="14" max="100" type="range" 
+			ng-model="vm.data[vm.RTService.getSelectedElemId()].style.text_size"
+			ng-disabled="vm.RTService.getSelectedElemId() === null"
+			ng-change="vm.changeTextSize(vm.data[vm.RTService.getSelectedElemId()].style.text_size)">
+	</div>
+	<div class="panel-small line-height-panel">
+		<p class="panel-notes">Line-Height</p>
+		<input id="lineHeightInputId"
+			min="14" max="120" type="range" 
+			ng-model="vm.data[vm.RTService.getSelectedElemId()].style.line_height"
+			ng-disabled="vm.RTService.getSelectedElemId() === null"
+			ng-change="vm.changeLineHeight(vm.data[vm.RTService.getSelectedElemId()].style.line_height)">
+	</div>
+
+	<div class="panel-small margin-top-panel">
+		<p class="panel-notes">Margin Top</p>
+		<input id="marginTopInputId"
+			min="0" max="200" type="range" 
+			ng-model="vm.data[vm.RTService.getSelectedElemId()].style.margin_top"
+			ng-disabled="vm.RTService.getSelectedElemId() === null"
+			ng-change="vm.changeMarginTop(vm.data[vm.RTService.getSelectedElemId()].style.margin_top)">
+	</div>
+	<div class="panel-small margin-bottom-panel">
+		<p class="panel-notes">Margin Bottom</p>
+		<input id="marginBottomInputId"
+			min="0" max="200" type="range" 
+			ng-model="vm.data[vm.RTService.getSelectedElemId()].style.margin_bottom"
+			ng-disabled="vm.RTService.getSelectedElemId() === null"
+			ng-change="vm.changeMarginBottom(vm.data[vm.RTService.getSelectedElemId()].style.margin_bottom)">
+	</div>
+
+	<div class="panel-large">
+		<div class="panel-half font-family-panel">
+			<p class="panel-notes">Font</p>
+			<form name="myForm">
+		    <select name="singleSelect" 
+			    ng-model="vm.data[vm.RTService.getSelectedElemId()].style.font_family" 
+			    ng-change="vm.changeFontFamily(vm.data[vm.RTService.getSelectedElemId()].style.font_family)" 
+			    ng-disabled="vm.RTService.getSelectedElemId() === null">
+		      <option value="Arial">Arial</option>
+		      <option value="Georgia">Georgia</option>
+		      <option value="New Times Roman">New Times Roman</option>
+		    </select><br>
+	  	</form>
+		</div>
+		<div class="panel-half colors-panel">
+			
+			<span class="text-color-panel">
+				<p class="panel-notes">Text</p>
+				<input type="color" 
+				ng-model="vm.data[vm.RTService.getSelectedElemId()].style.color" 
+				ng-change="vm.changeTextColor(vm.data[vm.RTService.getSelectedElemId()].style.color)" 
+				ng-disabled="vm.RTService.getSelectedElemId() === null">
+			</span>
+
+			<span class="bg-color-panel">
+				<p class="panel-notes">BG</p>
+				<input type="color" 
+				ng-model="vm.data[vm.RTService.getSelectedElemId()].style.bg_color" 
+				ng-change="vm.changeBgColor(vm.data[vm.RTService.getSelectedElemId()].style.bg_color)" 
+				ng-disabled="vm.RTService.getSelectedElemId() === null">
+			</span>
+		</div>
+	</div>
+
+</div>
