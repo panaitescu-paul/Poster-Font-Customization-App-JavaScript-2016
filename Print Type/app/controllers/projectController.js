@@ -1,6 +1,6 @@
 myapp.controller('ProjectController', ['$scope', '$stateParams', 'RTService', 'RenderService', function($scope, $stateParams, RTService, RenderService) {
 
-	console.log('ProjectController');
+	console.log('ProjectController'); 
 
 	$scope.RTService = RTService;
 	$scope.currentProject = null;
