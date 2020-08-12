@@ -1,4 +1,4 @@
-# Print Type
+# Poster Font Customization App - JavaScript - 2016
 Customize paragraphs of text, and download them for printing.
 
 ### Features
