@@ -1,7 +1,7 @@
 # Poster Font Customization App - JavaScript - 2016
 ### Customize text paragraphs in a Poster, and download it for printing.
 
-## Features
+## Features:
 1. **Multiple options for text customization**
 	- Paragraph: create, delete, edit, margins
 	- Text: size, line height, color
