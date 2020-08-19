@@ -1,22 +1,28 @@
 # Poster Font Customization App - JavaScript - 2016
-Customize paragraphs of text, and download them for printing.
+### Customize text paragraphs in a Poster, and download it for printing.
 
-### Features
-1. Download image of the project, ready for printing
-2. Auto save on database with FireBase
-3. Multiple projects in the same time
-4. Multiple options for text customization
+## Features
+1. **Multiple options for text customization**
 	- Paragraph: create, delete, edit, margins
 	- Text: size, line height, color
 	- Background: color
-5. 10 fonts with Google Fonts integration
+2. **10 Font choices** with Google Fonts integration
+3. **Auto save in database** with FireBase
+4. **Manage multiple Posters in the same time**
+5. **Download the Poster**, ready for printing
 
-### Technologies: 
+## Technologies: 
 1. Angular JS
-2. Firebase
-3. Google Fonts
+2. JavaScript
+3. Firebase
+4. Google Fonts
+5. HTML
+6. CSS
 
-### Preview
+## Tools:
+- Sublime Text
+
+## Preview
 ![alt tag](https://github.com/panaitescu-paul/print-type/blob/master/Process/1.png) 
 ![alt tag](https://github.com/panaitescu-paul/print-type/blob/master/Process/2.png) 
 ![alt tag](https://github.com/panaitescu-paul/print-type/blob/master/Process/3.png) 
